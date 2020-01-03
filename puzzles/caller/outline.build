@@ -1,0 +1,16 @@
+__BUILD_CALLER_OUTSIDE__
+
+module.exports =
+/**
+ * @class Routes
+ * @classdesc implement all routes
+ */
+class {
+
+    constructor( app ) {
+
+        __BUILD_CALLER_INSIDE__
+
+    }
+
+} ;

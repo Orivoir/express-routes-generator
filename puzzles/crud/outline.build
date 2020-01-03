@@ -1,0 +1,119 @@
+/**
+ * @author __BUILD_CLIENT_AUTHOR__
+ *
+ * @package __BUILD_CLIENT_PACKAGE__
+ * @license __BUILD_CLIENT_LICENSE__
+ * @version __BUILD_CLIENT_VERSION__
+ */
+
+const Route = require('./model-route') ;
+
+module.exports =
+/**
+ * @class __BUILD_NAME_CAPITALIZE__
+ * @extends Routes
+ */
+class extends Route {
+
+    constructor( app ) {
+
+        super(
+            app ,
+            '__BUILD_NAME__' , '__BUILD_ACTION__' , '__BUILD_GET_ONE_ROUTE_NAME__' ,
+            '__BUILD_UPDATE_ROUTE_NAME__' , '__BUILD_CREATE_ROUTE_NAME__' , '__BUILD_DELETE_ROUTE_NAME__'
+        ) ;
+
+        // call routes __BUILD_NAME__
+        this
+            .getOne()
+            .getAll()
+            .update()
+            .create()
+            .delete()
+        ;
+
+    }
+
+    /**
+    * @function getOne
+    * @route `/__BUILD_NAME__/__BUILD_ACTION__`
+    * @method GET
+    */
+    getOne() {
+
+        super.getOne( ( __BUILD_REQ_NAME__, __BUILD_RES_NAME__ ) => {
+
+            const {__BUILD_QUERY_STRING_PARAMS_GET_ONE__} = __BUILD_REQ_NAME__.params ;
+
+        } ) ;
+
+        return this;
+    }
+
+    /**
+    * @function getAll
+    * @route `/__BUILD_NAME__`
+    * @method GET
+    */
+    getAll() {
+
+        super.getAll( ( __BUILD_REQ_NAME__, __BUILD_RES_NAME__ ) => {
+
+
+        } ) ;
+
+        return this;
+    }
+
+    /**
+    * @function update
+    * @route `/__BUILD_NAME__/__BUILD_UPDATE_ROUTE_NAME__/__BUILD_ACTION__`
+    * @method PUT
+    */
+    update() {
+
+        super.update( ( __BUILD_REQ_NAME__, __BUILD_RES_NAME__ ) => {
+
+            const __BUILD_NAME__ = __BUILD_REQ_NAME__.data ;
+            const {__BUILD_QUERY_STRING_PARAMS_UPDATE__} = __BUILD_REQ_NAME__.params ;
+
+        } ) ;
+
+    }
+
+    /**
+    * @function create
+    * @route `/__BUILD_NAME__/__BUILD_CREATE_ROUTE_NAME__/__BUILD_ACTION__`
+    * @method POST
+    */
+    create() {
+
+        super.create( ( __BUILD_REQ_NAME__, __BUILD_RES_NAME__ ) => {
+
+            const __BUILD_NAME__ = __BUILD_REQ_NAME__.data ;
+            const {__BUILD_QUERY_STRING_PARAMS_CREATE__} = __BUILD_REQ_NAME__.params ;
+
+        } ) ;
+
+        return this;
+    }
+
+    /**
+    * @function delete
+    * @route `/__BUILD_NAME__/__BUILD_DELETE_ROUTE_NAME__/__BUILD_ACTION__`
+    * @method DELETE
+    */
+    delete() {
+
+        super.delete( ( __BUILD_REQ_NAME__, __BUILD_RES_NAME__ ) => {
+
+            const tokenServer = super.token ;
+            const {__BUILD_QUERY_STRING_PARAMS_DELETE__} = __BUILD_REQ_NAME__.params ;
+
+        } ) ;
+
+        return this;
+    }
+
+
+} ;

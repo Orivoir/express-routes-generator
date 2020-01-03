@@ -1,0 +1,34 @@
+{
+  "name": "express-routes-generator",
+  "version": "1.0.0",
+  "description": "build content file crud routes with express",
+  "main": "express-routes-generator.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm test"
+  },
+  "keywords": [
+    "express" ,
+    "build",
+    "routes" ,
+    "generate" ,
+    "generator" ,
+    "API" ,
+    "crud" ,
+    "builder"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "string-puzzler": "^0.4.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "codecov": "^3.6.1",
+    "mocha": "^6.2.2",
+    "nyc": "^15.0.0"
+  }
+}
