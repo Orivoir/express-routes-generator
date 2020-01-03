@@ -1,6 +1,6 @@
 {
   "name": "express-routes-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "build content file crud routes with express",
   "main": "express-routes-generator.js",
   "directories": {
@@ -9,6 +9,10 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Orivoir/express-routes-generator.git"
   },
   "keywords": [
     "express" ,
